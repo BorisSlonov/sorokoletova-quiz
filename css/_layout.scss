@@ -1,0 +1,37 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+html,
+body {
+    font-size: calc(.5em + 1vw);
+    font-family: 'Geometria';
+}
+
+
+@media (min-width: 425px) {
+
+    html,
+    body {
+        font-size: calc(.45em + .9vw);
+    }
+}
+
+@media (min-width: 1440px) {
+  
+
+    html,
+    body {
+        font-size: calc(.4em + .7vw);
+    }
+}
+
+@media (min-width: 1979px) {
+   
+    html,
+    body {
+        font-size: calc(.4em + .5vw);
+    }
+}
