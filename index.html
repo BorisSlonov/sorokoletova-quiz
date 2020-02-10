@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Сороколетова</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class='header__body'>
+                <!-- logo -->
+                <span class='header__logo'>
+                    Сороколетова.
+                    <span>бухгалтер-аудитор</span>
+                </span>
+
+                <!-- burger -->
+                <div class='header__burger'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- navigation -->
+                <nav class='header__menu'>
+                    <ul class='header__list'>
+                        <li class=''><a href='#features' class='header__link'>Главная</a></li>
+                        <li class=''><a href='#works' class='header__link'>Консультация</a></li>
+                        <li class=''><a href='#team' class='header__link'>Ваша ситуация</a></li>
+                        <li class=''><a href='#test' class='header__link'>Приоритет</a></li>
+                        <li class=''><a href='#download' class='header__link'>Сотрудничество</a></li>
+                        <li class=''><a href='#download' class='header__link'>Кейсы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class='container'>
+        <ul class='main-points'>
+            <li>
+                <img src="img/blue-dot.png" alt="">
+                <span>Решаю проблемы<br>
+                    с налогами<br>
+                    и налоговой</span>
+            </li>
+            <li>
+                <img src="img/blue-dot.png" alt="">
+                <span>
+                    Строю<br>
+                    легальные<br>
+                    схемы
+                </span>
+            </li>
+            <li>
+                <img src="img/blue-dot.png" alt="">
+                <span>
+                    Восстанавливаю<br>
+                    и оптимизирую<br>
+                    бухучет
+                </span>
+            </li>
+        </ul>
+    </div> -->
+
+
+
+    <!-- header-content -->
+    <div class='container'>
+        <div class="header-content">
+            <!-- item -->
+            <div class="header-content__item">
+                <div>
+                    <h1>Как узнать вероятность <span class='text-blue'>попадения вашего бизнеса в списки налоговой
+                            для<br> проверки?</span></h1>
+                </div>
+                <div class='ready'><span>Пройдите тест</span></div>
+                <div class='offer'>
+
+                </div>
+                <div class='main-btn'>
+                    <a id="btn-start-test" href="">
+                        <span>Пройти</span>
+                    </a>
+                </div>
+            </div>
+            <!-- item -->
+            <div class='header-content__item'>
+                <div>
+                    <img src="img/first-photo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-content -->
+
+    <!-- quiz -->
+    <section class="about">
+
+        <div class="container">
+            <form action="#" class="quiz">
+                <!-- step1 -->
+                <div class="modal">
+                    <div class="step step1">
+                        <h3>Тест определения процента вероятности попадания
+                            вашего бизнеса в списки для проверки налоговой.</h3>
+                        <div class='quiz-container'>
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Форма собственности</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="ownership-type" type="radio" value="0">
+                                        <span>ИП</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="ownership-type" type="radio" value="1">
+                                        <span>ООО</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Система налогобложения</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="tax-system-radios" type="radio" value="0">
+                                        <span>ОСНО</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="tax-system-radios" type="radio" value="1">
+                                        <span>УСН</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="tax-system-radios" type="radio" value="2">
+                                        <span>ЕНВД</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="tax-system-radios" type="radio" value="3">
+                                        <span>Патент</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Организация существует больше года?</h4>
+                                <div class='checbox-item'>
+                                    <input name="is-year" type="checkbox">
+                                    <span>Да</span>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- qiuz-btn -->
+                            <div class="quiz-btn-container">
+                                <div class="step-score">
+                                    <span>Вопросы 1 / 2</span>
+                                </div>
+                                <div class='main-btn'>
+                                    <a id="btn-next" href="">
+                                        <span>Далее</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- qiuz-btn -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ЕСНО меньше года ООО, ИП -->
+                <!-- step2-1 -->
+                <div class="modal">
+                    <div class="step step2-1">
+                        <h3>Тест определения процента вероятности попадания
+                            вашего бизнеса в списки для проверки налоговой.</h3>
+                        <div class='quiz-container'>
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>За время деятельности меняли ли вы юридический адрес
+                                    и налоговую более двух раз?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-1-1" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-1-1" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Были случаи игнорирования писем, и и непредоставления
+                                    документов по требованию налоговой?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-1-2" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-1-2" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Случалось, что заявляли крупные суммы на
+                                    вычет по НДС?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-1-3" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-1-3" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- qiuz-btn -->
+                            <div class="quiz-btn-container">
+                                <div class="step-score">
+                                    <span>Вопросы 2 / 2</span>
+                                </div>
+                                <div class='main-btn'>
+                                    <a class="btn-result" href="">
+                                        <span>Результат</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- qiuz-btn -->
+                        </div>
+                    </div>
+                </div>
+                <!-- step2-1 -->
+
+                <!-- step2-2 -->
+                <!-- if ОСНО больше года ООО -->
+                <div class="modal">
+                    <div class="step step2-2">
+                        <h3>Тест определения процента вероятности попадания
+                            вашего бизнеса в списки для проверки налоговой.</h3>
+                        <div class='quiz-container'>
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Налоговая нагрузка меньше среднеотраслевой?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-1" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-1" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Рентабельность продаж и активов небольшая?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-2" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-2" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Случалось, что заявляли крупные суммы на
+                                    вычет по НДС?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-3" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-3" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>За время деятельности меняли ли вы
+                                    юридический адрес и налоговую более двух раз?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-4" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-4" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Были случаи игнорирования писем, и и непредоставления
+                                    документов по требованию налоговой?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-5" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-5" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Темп роста расходов опрежеют ли тепм роста доходов?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-6" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-6" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Уровень среднемесячной зарплаты сотрудников меньше
+                                    среднестатистического?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-7" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-7" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Случалось, что заявляли крупные суммы на
+                                    вычет по НДС?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-8" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-8" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Случалось, что заявляли крупные суммы на
+                                    вычет по НДС?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-9" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-9" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Показывали ли убытки за последние два года?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-2-10" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-2-10" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- qiuz-btn -->
+                            <div class="quiz-btn-container">
+                                <div class="step-score">
+                                    <span>Вопросы 2 / 2</span>
+                                </div>
+                                <div class='main-btn'>
+                                    <a class="btn-result" href="">
+                                        <span>Результат</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- qiuz-btn -->
+                        </div>
+                    </div>
+                </div>
+                <!-- if ОСНО больше года ООО -->
+                <!-- step2-2 -->
+
+                <!-- step2-3 -->
+                <!-- if Спецрежим (УСН,ЕНВД) ООО ,ИП -->
+                <div class="modal">
+                    <div class="step step2-3">
+                        <h3>Тест определения процента вероятности попадания
+                            вашего бизнеса в списки для проверки налоговой.</h3>
+                        <div class='quiz-container'>
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>За время деятельности меняли ли вы юридический адрес
+                                    и налоговую более двух раз?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-3-1" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-3-1" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Были случаи игнорирования писем, и и непредоставления
+                                    документов по требованию налоговой?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-3-2" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-3-2" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Более двух раз за год приближались к допустимым
+                                    органичениям для спецрежима?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-3-3" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-3-3" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- qiuz-btn -->
+                            <div class="quiz-btn-container">
+                                <div class="step-score">
+                                    <span>Вопросы 2 / 2</span>
+                                </div>
+                                <div class='main-btn'>
+                                    <a class="btn-result" href="">
+                                        <span>Результат</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- qiuz-btn -->
+                        </div>
+                    </div>
+                </div>
+                <!-- if Спецрежим (УСН,ЕНВД) ООО ,ИП -->
+                <!-- step2-3 -->
+
+
+
+
+
+
+
+
+                <!-- step2-4 -->
+                <!-- if ОСНО больше года ИП -->
+                <div class="modal">
+                    <div class="step step2-4">
+                        <h3>Тест определения процента вероятности попадания
+                            вашего бизнеса в списки для проверки налоговой.</h3>
+                        <div class='quiz-container'>
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Налоговая нагрузка меньше среднеотраслевой?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-4-1" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-4-1" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>За время деятельности меняли ли вы
+                                    юридический адрес и налоговую более двух раз?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-4-2" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-4-2" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Были случаи игнорирования писем, и и непредоставления
+                                    документов по требованию налоговой?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-4-3" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-4-3" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Уровень среднемесячной зарплаты сотрудников меньше
+                                    среднестатистического?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-4-4" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-4-4" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4>Случалось, что заявляли крупные суммы на
+                                    вычет по НДС?</h4>
+                                <div class="check-flex">
+                                    <div class='checbox-item'>
+                                        <input name="q-4-5" type="radio">
+                                        <span>Да</span>
+                                    </div>
+                                    <div class='checbox-item'>
+                                        <input name="q-4-5" type="radio">
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- check-container -->
+                            <!-- qiuz-btn -->
+                            <div class="quiz-btn-container">
+                                <div class="step-score">
+                                    <span>Вопросы 2 / 2</span>
+                                </div>
+                                <div class='main-btn'>
+                                    <a class="btn-result" href="">
+                                        <span>Результат</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- qiuz-btn -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Результат -->
+
+                <div class="modal">
+                    <div class="step">
+                        <h3>Результат</h3>
+                        <div class='quiz-container'>
+                            <!-- check-container -->
+                            <div class='checkbox-container'>
+                                <h4 id="result-text"></h4>
+                            <!-- check-container -->
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <!-- quiz -->
+
+
+    <footer class='footer'>
+        <div class="container">
+            <div class="footer-container">
+                <!-- item -->
+                <div class="footer-item">
+                    <span class='svetlana'>#светланаглавбух</span>
+                </div>
+                <div class="footer-item">
+                    <a class='oferta' href="#">
+                        <span>Публичная оферта</span>
+                    </a>
+                </div>
+                <!-- item -->
+                <div class="footer-item">
+                    <div>
+                        <a href="#">
+                            <img src="img/social/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+                    <div class='vk'>
+                        <a href="#">
+                            <img src="img/social/vk.png" alt="vk">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/social/iinst.png" alt="inst">
+                        </a>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class='footer-item'>
+                    <span class='brand'>
+                        © Продвижение сайтов<br>
+                        «ты-бренд.рф», 2019
+                    </span>
+                </div>
+                <!-- item -->
+            </div>
+        </div>
+    </footer>
+
+    <script src='js/main.js'></script>
+</body>
+
+</html>
