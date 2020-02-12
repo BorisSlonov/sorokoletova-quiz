@@ -212,6 +212,7 @@ button {
 
 html,
 body {
+    height: 100%;
   font-size: calc(.5em + 1vw);
   font-family: 'Geometria';
 }
@@ -743,12 +744,23 @@ body {
   display: block;
   margin-top: 5px;
 }
-
+.wrap {
+  min-height: 100%;
+}
+main {
+  padding-bottom: 100px;
+  /*Высота футера*/
+}
 .footer {
-  margin-top: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+
+
+    padding-top: 15px;
+    padding-bottom: 15px;
   background-color: #f4f4f4;
+  margin-top: -100px;
+  /*Минус Высота футера*/
+  min-height: 100px;
+  /*Высота футера*/
 }
 
 .footer-container {
