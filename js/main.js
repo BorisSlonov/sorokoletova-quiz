@@ -71,16 +71,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setResultText = (prob) => {
         const resultTextEl = document.getElementById('result-text');
+        const probabilityText = document.getElementById('probability-text');
         let text = '';
-        if (prob < 20)
+        if (prob < 20) {
             text = 'Согласно кретериям вы не являетесь кандидатом на выездые налоговые проверки.';
-        else if (prob >= 20)
+            probabilityText.style.color = "#28a745";
+        }
+        else if (prob < 60) {
             text = 'У испекторов есть основания включить вас в списки кандидатов  на выездные налоговые проверки на следующий год.';
-        else
+            probabilityText.style.color = "#ffc107";
+        }
+        else {
             text = 'Вы являетесь кандидатом на выездную налоговую проверку  на следующий год, возможно даже внеплановую. Уже сейчас начните подготовку.';
+            probabilityText.style.color = "#dc3545";
+        }
         text += 'Смотрите схемы по налоговй оптимизации и налоговому планировании  или обратитесь за консультацией,чтобы уменьшить риски.';
 
         resultTextEl.textContent = text;
+        probabilityText.textContent = prob + "%";
     }
 
     const resultButtons = document.querySelectorAll('.btn-result');
@@ -111,14 +119,14 @@ window.addEventListener('DOMContentLoaded', () => {
         const q27 = document.getElementsByName('q-2-7')[0];
         const q28 = document.getElementsByName('q-2-8')[0];
 
-        probability += q11.checked ? 20 : 0;
-        probability += q12.checked ? 10 : 0;
-        probability += q13.checked ? 10 : 0;
-        probability += q13.checked ? 10 : 0;
-        probability += q13.checked ? 10 : 0;
-        probability += q13.checked ? 10 : 0;
-        probability += q13.checked ? 10 : 0;
-        probability += q13.checked ? 10 : 0;
+        probability += q21.checked ? 20 : 0;
+        probability += q22.checked ? 10 : 0;
+        probability += q23.checked ? 10 : 0;
+        probability += q24.checked ? 10 : 0;
+        probability += q25.checked ? 10 : 0;
+        probability += q26.checked ? 10 : 0;
+        probability += q27.checked ? 10 : 0;
+        probability += q28.checked ? 10 : 0;
 
         setResultText(probability);
         modals[5].style.display = 'block';
