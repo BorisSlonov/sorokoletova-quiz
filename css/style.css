@@ -286,7 +286,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 90px;
 }
 
 .header__list {
@@ -384,23 +384,7 @@ body {
   }
 }
 
-.container .main-points {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 120px;
-  margin-top: 80px;
-}
 
-.container .main-points li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  font-size: .9rem;
-}
 
 .container .main-points li img {
   max-width: 8px;
@@ -421,7 +405,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 100px;
+  margin-top: 130px;
   margin-left: 25px;
 }
 
@@ -614,6 +598,7 @@ body {
 }
 
 .step {
+  font-size: calc(.45em + .4vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,14 +610,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  max-width: 550px;
+  max-width: 650px;
   padding: 10px;
   -webkit-box-shadow: 0 0 6px 3px #2138691a;
           box-shadow: 0 0 6px 3px #2138691a;
   background-color: #ffffff;
   margin: auto;
   border-radius: 5px;
-  max-height: calc(100vh - 210px);
+  max-height: calc(100vh - 70px);
   overflow-y: auto;
 }
 
@@ -641,6 +626,51 @@ body {
   font-size: 1rem;
   color: #2d2d2d;
   text-transform: uppercase;
+}
+
+.step2-2 .checkbox-container {
+  font-size: calc(.45em + .4vw);
+  margin-top: 10px;
+}
+
+@media (max-height: 700px) {
+  .step {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .step2-2 .checkbox-container {
+    font-size: calc(.45em + .3vw);
+    margin-top: 10px;
+  }
+
+  .step2-2 h3 {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  .quiz-btn-container {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .step {
+    font-size: calc(.45em + 1.5vw);
+  }
+}
+
+@media (max-width: 700px) {
+  .step2-2 {
+    font-size: calc(.45em + 2vw);
+  }
+}
+
+@media (max-width: 1200px) {
+  .step2-4, .step2-2 {
+    max-width: 850px;
+  }
 }
 
 .quiz-container {
@@ -716,7 +746,9 @@ body {
 
 .footer {
   margin-top: 100px;
+  padding-top: 25px;
   padding-bottom: 25px;
+  background-color: #f4f4f4;
 }
 
 .footer-container {
@@ -776,7 +808,7 @@ body {
   display: none;
   position: fixed;
   z-index: 51;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -801,6 +833,19 @@ input[type=radio] {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.btn-result {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result h3 {
+  margin: 0;
+}
+
+.result .checkbox-container {
+  margin-top: 10px;
 }
 
 @media (max-width: 425px) {
