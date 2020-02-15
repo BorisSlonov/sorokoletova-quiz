@@ -478,6 +478,8 @@ body {
 
 .header-content__item img {
   margin-top: -20px;
+  position: relative;
+  z-index: 1;
 }
 
 .header-content__item .ready {
@@ -858,7 +860,7 @@ input[type=radio] {
   padding-top: 25px;
   background-color: #f4f4f4;
   position: relative;
-  z-index: 50;
+  z-index: 2;
 }
 
 .footer-container {
