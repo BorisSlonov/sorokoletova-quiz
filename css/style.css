@@ -212,7 +212,6 @@ button {
 
 html,
 body {
-    height: 100%;
   font-size: calc(.5em + 1vw);
   font-family: 'Geometria';
 }
@@ -240,6 +239,9 @@ body {
 
 .text-blue {
   color: #213869;
+}
+.text-red {
+  color: red;
 }
 
 .header {
@@ -287,7 +289,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90px;
+  height: 80px;
 }
 
 .header__list {
@@ -385,7 +387,23 @@ body {
   }
 }
 
+.container .main-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 120px;
+  margin-top: 80px;
+}
 
+.container .main-points li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: .9rem;
+}
 
 .container .main-points li img {
   max-width: 8px;
@@ -406,7 +424,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-left: 25px;
 }
 
@@ -442,6 +460,7 @@ body {
   width: 100px;
   height: 100px;
   right: 200px;
+  bottom: -100px;
 }
 
 .header-content__item img {
@@ -501,7 +520,7 @@ body {
   }
   .header-content__item h1::after {
     right: 50px;
-    bottom: 10px;
+   
   }
 }
 
@@ -532,7 +551,7 @@ body {
 }
 
 .main-btn {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .main-btn a {
@@ -594,9 +613,7 @@ body {
   }
 }
 
-.about {
-  margin-top: 80px;
-}
+
 
 .step {
   font-size: calc(.45em + .4vw);
@@ -619,7 +636,7 @@ body {
   margin: auto;
   border-radius: 5px;
   max-height: calc(100vh - 70px);
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .step h3 {
@@ -706,6 +723,8 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   max-width: 160px;
+  display: block;
+  margin: 0 auto;
 }
 
 .checkbox-container {
@@ -744,23 +763,75 @@ body {
   display: block;
   margin-top: 5px;
 }
-.wrap {
-  min-height: 100%;
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 51;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
-main {
-  padding-bottom: 100px;
-  /*Высота футера*/
+
+input[type=radio] {
+  margin-top: 5px;
 }
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-result {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result h3 {
+  margin: 0;
+}
+
+.result .checkbox-container {
+  margin-top: 10px;
+}
+
+.error {
+  display: none;
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
 .footer {
-
-
-    padding-top: 15px;
-    padding-bottom: 15px;
+  margin-top: 100px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   background-color: #f4f4f4;
-  margin-top: -100px;
-  /*Минус Высота футера*/
-  min-height: 100px;
-  /*Высота футера*/
+  position: relative;
+  z-index: 50;
 }
 
 .footer-container {
@@ -816,48 +887,38 @@ main {
   font-size: 0.9rem;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 51;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+.footer-item .brand.last {
+  text-align: right;
+  margin-top: 25px;
+  font-size: 0.9rem;
 }
 
-input[type=radio] {
-  margin-top: 5px;
+.footer-item .brand.prelast {
+  text-align: left;
+  margin-top: 25px;
+  font-size: 0.9rem;
 }
 
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.btn-result {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.result h3 {
-  margin: 0;
-}
-
-.result .checkbox-container {
-  margin-top: 10px;
+@media (max-width: 794px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brand {
+    text-align: center;
+  }
+  .footer-item:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .footer-item .brand.prelast {
+    text-align: center;
+  }
+  .footer-item .brand.last {
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {
