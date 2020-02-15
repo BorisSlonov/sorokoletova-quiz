@@ -848,6 +848,14 @@ input[type=radio] {
           align-items: center;
 }
 
+.footer-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
 .footer-item {
   display: -webkit-box;
   display: -ms-flexbox;
